@@ -1,0 +1,36 @@
+{
+  "name": "gulp-i18n-compile",
+  "version": "1.0.0",
+  "description": "A gulp plugin to compile translation files",
+  "main": "lib/i18nCompile.js",
+  "scripts": {
+    "test": "jasmine-node --coffee --verbose --color .",
+    "prepublish": "coffee -bo lib src/*.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svi3c/gulp-i18n-compile.git"
+  },
+  "keywords": [
+    "i18n",
+    "yaml",
+    "gulpplugin",
+    "translate"
+  ],
+  "author": "Sven Reglitzki <sreglitzki@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svi3c/gulp-i18n-yaml/issues"
+  },
+  "homepage": "https://github.com/svi3c/gulp-i18n-compile#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "merge": "^1.2.0",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5",
+    "sandboxed-module": "^2.0.3",
+    "stream-array": "^1.1.1"
+  }
+}
