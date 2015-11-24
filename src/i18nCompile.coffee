@@ -5,7 +5,7 @@ path = require "path"
 PLUGIN_NAME = require("../package.json").name
 merge = require "merge"
 
-module.exports = (fileName, {localePlaceholder} = {}) ->
+module.exports = (fileName, {localePlaceholder, pretty} = {}) ->
 
   allTranslations = {}
   nothingToWrite = false
@@ -34,7 +34,7 @@ module.exports = (fileName, {localePlaceholder} = {}) ->
     createOutFile = (fileName, jsonContent) ->
       file = latestFile.clone contents: false
       file.path = path.join latestFile.base, fileName
-      file.contents = new Buffer JSON.stringify jsonContent
+      file.contents = new Buffer JSON.stringify jsonContent, null, pretty
       file
 
     if localePlaceholder?

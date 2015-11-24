@@ -135,3 +135,10 @@ describe "i18nCompile", ->
       expect(paths).toContain "en.json"
       expect(paths).toContain "de.json"
 
+    it "should be possible to prettify the json output", ->
+      init "out.json", pretty: 2
+      invokeCollector()
+
+      invokeWriter()
+
+      expect(stream.push.argsForCall[0][0].contents.toString()).toEqual JSON.stringify converted, null, 2

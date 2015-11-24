@@ -1,7 +1,7 @@
 {
   "name": "gulp-i18n-compile",
-  "version": "1.0.0",
-  "description": "A gulp plugin to compile translation files",
+  "version": "1.0.1",
+  "description": "A gulp plugin to compile DRY translation files",
   "main": "lib/i18nCompile.js",
   "scripts": {
     "test": "jasmine-node --coffee --verbose --color .",
@@ -15,7 +15,8 @@
     "i18n",
     "yaml",
     "gulpplugin",
-    "translate"
+    "translate",
+    "internationalization"
   ],
   "author": "Sven Reglitzki <sreglitzki@gmail.com>",
   "license": "MIT",
