@@ -2,7 +2,7 @@
 
 # Install
 
-    npm install grunt-i18n-compile --save-dev
+    npm install gulp-i18n-compile --save-dev
 
 # The DRY translation format
 
